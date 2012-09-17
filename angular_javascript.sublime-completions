@@ -1,0 +1,39 @@
+{
+        "scope": "source.js, source.json",
+
+        "completions":
+        [
+                { "trigger": "compl", "contents": "{ \"trigger\": \"$1\", \"contents\": \"$2\" }${3:,}"},
+                { "trigger": ".$apply", "contents": ".\\$apply($0);" },
+                { "trigger": ".$digest", "contents": ".\\$digest();" },
+                { "trigger": ".$eval", "contents": ".\\$eval($0);" },
+                
+                { "trigger" : "$filter", "contents": "\\$filter('${1:currency|date|filter|json|limitTo|linky|lowercase|number|orderBy|uppercase}')(${2:array}${3:, ${4:expression}});" },
+                { "trigger" : "$routeProvider.when", "contents": "\\$routeProvider.when('$1', {template: '$2', controller: $3});"},
+                { "trigger" : "$http", "contents": "\\$http('${1:GET|POST|PUT|DELETE}', ${2:url}${3:, ${4:post}}, ${5:function(status, response){\n${6:// success}\n}}${7:, function(status, response){\n${8:// error}\n}});"},
+                
+                { "trigger": "angular.copy", "contents": "angular.copy(${1:source}${2:, ${3:destination}})" },
+                { "trigger": "angular.element", "contents": "angular.element(${1:element});" },
+                { "trigger": "angular.extend", "contents": "angular.extend(${1:destinationObject}, ${2:sourceObject})" },
+                
+                { "trigger": "angular.forEach", "contents": "angular.forEach(${1:values}, function(${2:value}, ${3:key}) {\n$0\n});" },
+                
+                { "trigger": "angular.isArray", "contents": "angular.isArray(${1:value})" },
+                { "trigger": "angular.isDefined", "contents": "angular.isDefined(${1:value})" },
+                { "trigger": "angular.isFunction", "contents": "angular.isFunction(${1:value})" },
+                { "trigger": "angular.isString", "contents": "angular.isString(${1:value})" },
+                { "trigger": "angular.isNumber", "contents": "angular.isNumber(${1:value})" },
+                { "trigger": "angular.isObject", "contents": "angular.isObject(${1:value})" },
+                
+                { "trigger": "angular.lowercase", "contents": "angular.lowercase(${1:string});" },
+                { "trigger": "angular.uppercase", "contents": "angular.uppercase(${1:string});" },
+                
+                { "trigger": "angular.module", "contents": "**\n * $1 Module\n *\n * ${2:Description}\n */\nangular.module('$1', [$3]).$0" },                
+                
+                { "trigger": "angular.noop", "contents": "angular.noop()" },
+                
+                { "trigger": "directive", "contents": "directive('$1', [${3:'$4', }function($4){\n\t${5:// Runs during compile}\n\treturn function(scope, elm, attrs) {\n\t${6:// Runs during render}\n};\n}]);" },
+
+                "$routeProvider"
+        ]
+}

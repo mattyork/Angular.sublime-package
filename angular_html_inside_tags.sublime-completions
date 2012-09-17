@@ -1,0 +1,26 @@
+{
+        "scope": "text.html meta.tag",
+
+        "completions":
+        [
+                { "trigger": "ng-repeat", "contents": "ng-repeat=\"${1:(${2:key}, ${3:value})} in ${4:dataset}\""},
+                { "trigger": "ng-switch-when", "contents": "ng-switch-when=\"$1\"" },
+                { "trigger": "ng-switch-default", "contents": "ng-switch-default" },
+                { "trigger": "ng-click", "contents": "ng-click=\"$0\"" },
+                { "trigger": "ng-hide", "contents": "ng-hide=\"$0\"" },
+                { "trigger": "ng-options", "contents": "ng-options=\"${1:select} as ${2:label} for ${3:value} in ${4:array}\"" },
+                { "trigger": "ng-show", "contents": "ng-show=\"$0\"" },
+                { "trigger": "ng-checked", "contents": "ng-checked=\"$0\"" },
+                { "trigger": "ng-bind-html-unsafe", "contents": "ng-bind-html-unsafe=\"$0\"" },
+                { "trigger": "ng-bind-template", "contents": "ng-bind-template=\"$0\"" },
+                { "trigger": "ng-class", "contents": "ng-class=\"$0\"" },
+                { "trigger": "ng-controller", "contents": "ng-controller=\"$0\"" },
+                { "trigger": "ng-disabled", "contents": "ng-disabled=\"{{$0}}\"" },
+                { "trigger": "ng-non-bindable", "contents": "ng-non-bindable=\"$0\"" },
+                { "trigger": "ng-readonly", "contents": "ng-readonly=\"$0\"" },
+                { "trigger": "ng-selected", "contents": "ng-selected=\"$0\"" },
+                { "trigger": "ng-style", "contents": "ng-style=\"$0\"" },
+                
+                { "trigger": "", "contents": "" }
+        ]
+}

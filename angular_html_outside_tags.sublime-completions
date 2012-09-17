@@ -1,0 +1,14 @@
+{
+        "scope": "text.html -meta.tag",
+
+        "completions":
+        [
+
+                { "trigger": "ng-include", "contents": "<ng-include src=\"$1\"${2: scope=\"$3\"}${4: onload=\"$5\"}></ng-include>" },
+                { "trigger": "ng-pluralize", "contents": "<ng-pluralize count=\"$1\" when=\"$2\"${3: offset=\"$4\"}></ng-pluralize>" },
+                { "trigger": "ng-switch-on", "contents": "<ng-switch on=\"$1\">$0</ng-switch>" },
+                { "trigger": "ng-view", "contents": "<ng-view></ng-view>" },
+                { "trigger": "ng-template", "contents": "<script type=\"text/ng-template\">$0</script>" },
+                { "trigger": "", "contents": "" }
+        ]
+}
