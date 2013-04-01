@@ -34,6 +34,6 @@
                 
                 { "trigger": "directive", "contents": "directive('$1', [${3:'$4', }function($4){\n\t${5:// Runs during compile}\n\treturn function(scope, elm, attrs) {\n\t${6:// Runs during render}\n};\n}]);" },
 
-                "$routeProvider"
+                { "trigger": "$routeProvider", "contents": "\\$routeProvider" }
         ]
 }
