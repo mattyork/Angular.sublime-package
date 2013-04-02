@@ -28,7 +28,7 @@
                 { "trigger": "angular.lowercase", "contents": "angular.lowercase(${1:string});" },
                 { "trigger": "angular.uppercase", "contents": "angular.uppercase(${1:string});" },
                 
-                { "trigger": "angular.module", "contents": "**\n * $1 Module\n *\n * ${2:Description}\n */\nangular.module('$1', [$3]).$0" },                
+                { "trigger": "angular.module", "contents": "/**\n * $1 Module\n *\n * ${2:Description}\n */\nangular.module('$1', [$3]).$0" },                
                 
                 { "trigger": "angular.noop", "contents": "angular.noop()" },
                 
